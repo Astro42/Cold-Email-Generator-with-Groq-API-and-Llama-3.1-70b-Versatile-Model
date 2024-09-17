@@ -3,6 +3,7 @@
 ## Overview
 
 The Cold Email Generator is a web application that helps you generate personalized cold emails based on job postings. The application extracts job details from URLs, cleans the extracted text, and uses the LLaMA 3.1 70B Versatile model via LangChain with Groq API to compose a customized email. It supports integration with popular email services, allowing you to send the generated email directly from the app.
+**Note:** Due to security restrictions, web-based email clients do not support prepopulating the email body. As a result, the app currently redirects users to the web page of their email client, and users need to manually copy and paste the generated email content. Desktop clients may support prepopulating the email body in future updates.
 
 ## Features
 

@@ -44,7 +44,7 @@ The Cold Email Generator is a web application that helps you generate personaliz
 
 To use the Groq API in your project, you need an API key. Follow these steps to obtain it:
 
-**1. Sign Up:** Visit the Groq API website and sign up for an account.
+**1. Sign Up:** Visit the Groq API website(https://groq.com/) and sign up for an account.
 
 **2. Log In:** After signing up, log in to your account.
 

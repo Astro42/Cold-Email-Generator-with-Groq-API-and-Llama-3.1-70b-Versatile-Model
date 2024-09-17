@@ -40,7 +40,30 @@ The Cold Email Generator is a web application that helps you generate personaliz
    Ensure you have a my_portfolio.csv file in the resources directory.
 
 
-## File Descriptions
+## How to Obtain Groq API Key
+
+To use the Groq API in your project, you need an API key. Follow these steps to obtain it:
+
+**1. Sign Up:** Visit the Groq API website and sign up for an account.
+
+**2. Log In:** After signing up, log in to your account.
+
+**3. Access API Key:**
+   •	Navigate to the API section of your dashboard.
+   •	Find the API key generation section.
+   •	Generate a new API key if one is not already available.
+
+4. Copy the API Key: Once generated, copy the API key.
+
+5. Add to Environment Variables:
+   •	Open the .env file in your project’s root directory.
+   •	Add the following line, replacing your_groq_api_key with the copied API key
+   
+   ```makefile
+   GROQ_API_KEY=your_groq_api_key
+
+
+## File Descriptions 
 
 **main.py:**  This is the main entry point of the application. It sets up the Streamlit interface, handles user input, processes data, and integrates with the Chain, Portfolio, and EmailClient classes. It also provides functionality to generate and send cold emails.
 

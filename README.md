@@ -33,7 +33,31 @@ The Cold Email Generator is a web application that helps you generate personaliz
    ```bash  
    GROQ_API_KEY=your_groq_api_key
 
-4. Prepare Portfolio Data:
+5. Prepare Portfolio Data:
    Ensure you have a my_portfolio.csv file in the resources directory.
 
-     
+
+## File Descriptions
+
+**main.py:**  This is the main entry point of the application. It sets up the Streamlit interface, handles user input, processes data, and integrates with the Chain, Portfolio, and EmailClient classes. It also provides functionality to generate and send cold emails.
+
+**chains.py:** Contains the Chain class responsible for interacting with the language model to extract job postings and generate cold emails. It uses the Llama-3.1-70b versatile model from the Groq API.
+
+**email_client.py:** Includes the EmailClient class which provides functionality to open pre-filled email drafts in different email services like Outlook, Gmail, and Yahoo Mail.
+
+**portfolio.py:** Contains the Portfolio class that manages the portfolio data. It loads the portfolio from a CSV file and queries relevant links based on job requirements using ChromaDB.
+
+**utils.py:** Provides utility functions, including clean_text, which preprocesses and cleans text extracted from web pages by removing HTML tags, URLs, special characters, and extra whitespace.
+
+## my_portfolio.csv File
+The my_portfolio.csv file contains information about your technical skills and portfolio links. It should have the following columns:
+
+**Techstack:** A description of your technical skills and tools.
+**Links:** URLs to your portfolio, projects, or relevant work samples.
+
+This file is loaded by the Portfolio class and is used to provide relevant links when generating cold emails.
+
+## Running the App
+To run the Streamlit app, execute the following command in your terminal:
+```bash
+streamlit run main.py
